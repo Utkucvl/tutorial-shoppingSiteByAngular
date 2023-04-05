@@ -1,0 +1,56 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Casper Laptop",
+      "price": 15000,
+      "categoryId": 1,
+      "description": "Casper Excalibur",
+      "imageUrl": "https://cdn.akakce.com/casper/casper-excalibur-g770-1030-8uh0x-i5-10300h-8-gb-240-gb-ssd-gtx1650-15-6-full-hd-notebook-z.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Mouse",
+      "price": 150,
+      "categoryId": 2,
+      "description": "Rampage smx-r15",
+      "imageUrl": "https://m.media-amazon.com/images/I/417xqwkoyrL.jpg"
+    },
+    {
+      "name": "Telephone",
+      "description": "Iphone 8 ",
+      "price": "5000",
+      "categoryId": "2",
+      "imageUrl": "https://cdn.easycep.com/assets/_web/img/product/2022/04/l_apple-iphone-8-300-1-1649072745.webp",
+      "id": 3
+    },
+  
+    {
+      "imageUrl": "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/iphone-14-pro-model-unselect-gallery-2-202209_GEO_EMEA?wid=5120&hei=2880&fmt=p-jpg&qlt=80&.v=1660753617539",
+      "name": "Iphone",
+      "description": "Apple",
+      "price": "12000",
+      "categoryId": "2",
+      "id": 5
+    },
+ 
+    {
+      "name": "Telephone",
+      "price": "5000",
+      "categoryId": "2",
+      "description": "Iphone 8 ",
+      "imageUrl": "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/iphone-14-pro-model-unselect-gallery-2-202209_GEO_EMEA?wid=5120&hei=2880&fmt=p-jpg&qlt=80&.v=1660753617539",
+      "id": 7
+    }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "name": "Computers"
+    },
+    {
+      "id": 2,
+      "name": "Electronics"
+    }
+  ]
+}
