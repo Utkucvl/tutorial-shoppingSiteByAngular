@@ -1,0 +1,28 @@
+<h3 >Add New Product</h3>
+<form #productAddForm = "ngForm" (ngSubmit)="add(productAddForm)">
+<div class="form-group">
+    <input type="text" placeholder="Enter name" #name="ngModel" [(ngModel)]="model.name" class="form-control" name="name" id="name" required>
+    <div *ngIf="name.invalid&&name.dirty" class="alert alert-danger">Name is required</div>
+</div>
+<div class="form-group">
+    <input type="text" placeholder="Enter description" #description="ngModel" [(ngModel)]="model.description" class="form-control" name="description" id="description" required>
+    <div *ngIf="description.invalid&&description.dirty" class="alert alert-danger">Description is required</div>
+</div>
+<div class="form-group">
+    <input type="text" placeholder="Enter Image Url" #imageUrl="ngModel" [(ngModel)]="model.imageUrl" class="form-control" name="imageUrl" id="imageUrl" required>
+    <div *ngIf="imageUrl.invalid&&imageUrl.dirty" class="alert alert-danger">ImageUrl is required</div>
+</div>
+<div class="form-group">
+    <input type="text" placeholder="Enter Price" #price="ngModel" [(ngModel)]="model.price" class="form-control" name="price" id="price" required>
+    <div *ngIf="price.invalid&&price.dirty" class="alert alert-danger">Price is required</div>
+</div>
+<div class="form-group">
+    <select class= "form-control"name="categoryId" id="categoryId" #categoryId="ngModel" [(ngModel)]="model.categoryId" required >
+        <option *ngFor="let category of categories" [value]="category.id">{{category.name}}</option>
+        
+    </select>
+    <div class="alert alert-danger" *ngIf="categoryId.invalid&&categoryId.touched">Category is required</div>
+</div>
+<button type="submit" class="btn btn-primary" [disabled]="productAddForm.invalid">Add Product</button>
+
+</form>
